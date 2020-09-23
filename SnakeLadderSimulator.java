@@ -1,6 +1,6 @@
 /* Welcome to the Snake Ladder Simulator Problem */
 
-public class UC7_2_Player_and_Winner {
+public class SnakeLadderSimulator {
 
 	public static final int noPlay = 0;
 	public static final int snake = 1;
@@ -53,9 +53,9 @@ public class UC7_2_Player_and_Winner {
 		}
 
 		if(position1 == finalPosition) {
-			System.out.println("Winner is Position1 at destination "+position1);
+			System.out.println("Winner is Player1 at destination "+position1);
 		}else if(position2 == finalPosition){
-			System.out.println("Winner is Position2 at destination "+position2);
+			System.out.println("Winner is Player2 at destination "+position2);
 		}
 
 	}
