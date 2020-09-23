@@ -10,11 +10,13 @@ public class SnakeLadderSimulator {
 	public static void main(String[] args) {
 		System.out.println("Welcome to the Snake Ladder Simulator Problem");
 		int position = 0;
+		int countDiceRoll = 0;
 		while(position >= 0 && position != finalPosition) {
 			int option = (int) (Math.random()* 10) % 3;
-			System.out.println("Selected Option is "+option);
+			System.out.println(option);
 			int dieOutcome = (int)(Math.random()*(6 - 1))+ 1 ;
-			System.out.println("Outcome of Die Roll "+dieOutcome);
+			countDiceRoll++;
+			System.out.println(dieOutcome);
 			if(option == snake) {
 				position -= dieOutcome ; 
 				if(position < 0) {
@@ -28,13 +30,11 @@ public class SnakeLadderSimulator {
 			}else {
 				position += 0;
 			}
-			System.out.println("Position of the Player1 "+position);
+			System.out.println("Position at "+countDiceRoll+" DieRoll is "+position);
 		}
-		
-		System.out.println("Exact final Position of Player1 "+ position);
+		System.out.println("Total Number of time dice rolled is "+countDiceRoll);
 
 	}
 
 
 }
-
